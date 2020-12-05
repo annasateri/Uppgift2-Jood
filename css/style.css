@@ -1,0 +1,1486 @@
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Mobile */
+
+/* top content */
+.container {
+    max-width: 90vw;
+    margin: auto;
+}
+
+.top-background {
+    background-image: url(/images/blue_background_crop.png);
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-links {
+    display: none;
+}
+
+.fas {
+    font-size: 2rem;
+}
+
+.showcase {
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: 1rem;
+}
+
+#intro-p {
+    font-family: 'poppins';
+}
+
+h1 {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 22pt;
+    margin-top: 1.5rem;
+}
+
+.download-button {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 13px;
+    padding: 7px 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.watch-button {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+#play {
+    font-size: 1.5rem;
+    color: #FFBB00;
+    border: 3px solid;
+    border-radius: 50%;
+    padding: 0.3rem;
+    animation: pulse 2s infinite linear;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.buttons {
+    margin-bottom: 1.5rem;
+}
+
+.iphone-top-images {
+    position: relative;
+    height: 25rem;
+    margin-top: 1rem;
+}
+
+#iphone-top1 {
+    position: absolute;
+    height: 20rem;
+    top: 1rem;
+    left: 5rem;
+}
+
+#iphone-top2 {
+    position: absolute;
+    height: 20rem;
+    bottom: 0;
+}
+
+/* ec logotype */
+.ec-logo {
+    overflow: hidden;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#ec-utbildning {
+    margin-right: 5rem;
+}
+
+#ec-utbildning, #ec-utbildning2 {
+    margin-top: 5rem;
+    position: relative;
+    right: 0;
+    top: 0;
+    animation: slideshow 5s linear infinite;
+    transform: translate(-100vw);
+}
+
+  @keyframes slideshow {
+    0%    { right: -200vw; }
+    100%  { right: 30vw; }
+}
+
+/* about us */
+.container2 {
+    max-width: 95vw;
+    height: 135vh;
+    margin: auto;
+    text-align: center;
+}
+
+.about-us-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    overflow: hidden;
+}
+
+#circles {
+    height: 40vh;
+    justify-content: center;
+    display: flex;
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#about-us-iphone {
+    height: 20rem;
+    position: absolute;
+}
+
+.about-us-button {
+    border: #FFF5D9;
+    background-color: #FFF5D9;
+    border-radius: 8px;
+    padding: 3px 10px;
+    margin-bottom: 1rem;
+}
+
+#button-text {
+    color: #FFBB00;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about-us-content {
+    line-height: 1.7rem;
+    margin-top: 4rem;
+}
+
+h2 {
+    font-weight: 900;
+    letter-spacing: 0.04rem;
+    color: black;
+}
+
+#about-us-p {
+    color: #8A8A8A;
+    margin-bottom: 3rem;
+}
+
+/* features */
+.container7 {
+    max-width: 95vw;
+    height: 135vh;
+    margin: auto;
+    text-align: center;
+}
+
+#image-dots {
+    width: 50%;
+    position: absolute;
+    left: 85px;
+}
+
+.features {
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    align-content: center;
+}
+
+.grid-container > grid-item {
+    text-align: center;
+}
+
+h3 {
+    font-size: 15pt;
+    color: black;
+}
+
+.features-p {
+    color: #8A8A8A;
+    font-size: 10pt;
+}
+
+#search, #ads, #ease-main, #support {
+    background-color: #FFF5D9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.features-images {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+#features-image-back {
+    height: 17rem;
+    margin-top: 4rem;
+}
+
+#features-iphone1 {
+    position: absolute;
+    left: 3rem;
+    margin-top: 1rem;
+    height: 17rem;
+    -webkit-animation:spin 3s linear;
+    -moz-animation:spin 3s linear;
+    animation:spin 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    100% { -webkit-transform: rotate(-30deg); transform:rotate(-30deg); }
+}
+
+#features-iphone2 {
+    position: absolute;
+    height: 20rem;
+    margin-left: 1rem;
+}
+
+/* application */
+.container6 {
+    max-width: 95vw;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+}
+
+.centered-p {
+    color: #8A8A8A;
+    font-size: 12pt;
+    margin-top: 1rem;
+}
+
+.application-text {
+    line-height: 1.7rem;
+    margin-top: 3rem;
+}
+
+/* Carousel */
+.swiper-container {
+    width: 90vw;
+    height: 15rem;
+}
+
+.swiper-wrapper {
+    width: inherit;
+    height: inherit;
+}
+  
+.swiper-slide {
+    background: transparent;
+    opacity: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.swiper-slide img {
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+
+.swiper-slide-active {
+    transform: scale(1.2);
+    opacity: 100%;
+}
+  
+.swiper-slide-next, .swiper-slide-prev {
+    opacity: 70%;
+    
+}
+
+.swiper-pagination-bullet-active {
+    background-color:#3096FE;
+}
+
+/* statistics */
+.container5 {
+    max-width: 95vw;
+    height: 90vh;
+    margin: auto;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.application-text2 {
+    line-height: 1.7rem;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.nr {
+    color: #3096FE;
+    font-size: 25pt;
+    font-weight: 600;
+}
+
+.nr-p {
+    color: black;
+    font-weight: 500;
+}
+
+/* download content */
+.banner-background {
+    background-image: url(/images/Bg.png);
+    height: 102vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.container8 {
+    max-width: 95vw;
+    height: 102vh;
+    margin: auto;
+    text-align: center;
+}
+
+.download-content {
+    position: relative;
+}
+
+#download-h {
+    line-height: 2.5rem;
+    padding-top: 5rem;
+}
+
+#download-p {
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+#google, #apple {
+    height: 3.5rem;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+}
+
+.google-apple {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.download-iphones {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 49vh;
+}
+
+#iphone-left {
+    position: absolute;
+    height: 17rem;
+    right: 50vw;
+    bottom: 0;
+}
+
+#iphone-front {
+    position: absolute;
+    height: 20rem;
+    bottom: 0;
+}
+
+#iphone-right {
+    position: absolute;
+    height: 17rem;
+    left: 50vw;
+    bottom: 0;
+}
+
+/* form */
+.container4 {
+    max-width: 95vw;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-text {
+    margin-top: 4rem;
+    line-height: 1.7rem;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #FBFBFB;
+    border: #FBFBFB;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#message {
+    width: 100%;
+    height: 10rem;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #3096FE;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type=text], textarea::placeholder {
+    color: #cccccc;
+}
+ 
+input[type=text]::placeholder {
+    color: #cccccc;
+}
+
+.form-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+/* bottom */
+.banner-bg-bottom {
+    background-image: url(/images/Bg2.png);
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container3 {
+    max-width: 95vw;
+    height: 25vh;
+    margin: auto;
+}
+
+#logo-bottom {
+    height: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-links a {
+    color: white;
+    font-weight: 600;
+    font-size: 10pt;
+    padding: 0.5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 80%;
+}
+
+.fab {
+    font-size: 18pt;
+    background-color: #5CADFE;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+/* top content */
+
+.top-background {
+    height: 95vh;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-top: 3rem;
+}
+
+#intro-p {
+    font-size: 16pt;
+}
+
+.download-button {
+    padding: 10px 20px;
+    font-size: 16pt;
+    border-radius: 18px;
+}
+
+.watch-button {
+    padding: 8px 15px;
+    font-size: 16pt;
+}
+
+.buttons {
+    margin-bottom: 3rem;
+}
+
+#iphone-top1 {
+    height: 30rem;
+    top: 0;
+    left: 20rem;
+}
+
+#iphone-top2 {
+    height: 30rem;
+    left: 10rem;
+    top: 5rem;
+}
+
+/* ec logotype */
+.ec-logo {
+    margin-top: 5rem;
+}
+
+#ec-utbildning {
+    margin-right: 10rem;
+}
+
+/* about us */
+.container2 {
+    height: 145vh;
+}
+
+#about-us-iphone {
+    height: 35rem;
+}
+
+#circles {
+    height: 55vh;
+}
+
+.about-us-button {
+    padding: 10px 20px;
+}
+
+#button-text {
+    font-size: 16pt;
+}
+
+.about-us-content {
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 35pt;
+}
+
+#about-us-p {
+    font-size: 16pt;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+/* features */
+.container7 {
+    height: 150vh;
+}
+
+#image-dots {
+    width: 30%;
+    left: 250px;
+}
+
+h3 {
+    font-size: 22pt;
+}
+
+.features-p {
+    font-size: 16pt;
+}
+
+#search, #ads, #ease-main, #support {
+    padding: 25px;
+    height: 5rem;
+}
+
+.features-images {
+    margin-top: 9rem;
+}
+
+#features-image-back {
+    height: 27rem;
+}
+
+#features-iphone1 {
+    left: 12rem;
+    margin-top: 2rem;
+    height: 27rem;
+}
+
+#features-iphone2 {
+    height: 30rem;
+    margin-left: 2rem;
+}
+
+/* application */
+.container6 {
+    height: 70vh;
+}
+
+.application-text {
+    line-height: 1.7rem;
+    margin-top: 3rem;
+}
+
+.centered-p {
+    font-size: 16pt;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+
+/* Carousel */
+.swiper-container {
+    width: 90vw;
+    height: 25rem;
+}
+
+.swiper-slide img {
+    height: 16rem;
+    margin-bottom: 2rem;
+}
+
+/* statistics */
+.container5 {
+    height: 45vh;
+}
+
+.statistics {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nr {
+    font-size: 30pt;
+}
+
+.nr-p {
+    font-size: 16pt;
+}
+
+/* download content */
+.banner-background {
+    height: 110vh;
+}
+
+.container8 {
+    height: 110vw;
+}
+
+#download-h {
+    line-height: 3.5rem;
+}
+
+#download-p {
+    font-size: 16pt;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#google, #apple {
+    height: 6rem;
+    border-radius: 12px;
+}
+
+.google-apple {
+    gap: 2rem;
+}
+
+.download-iphones {
+    height: 60vh;
+}
+
+#iphone-left {
+    height: 30rem;
+}
+
+#iphone-front {
+    height: 35rem;
+}
+
+#iphone-right {
+    height: 30rem;
+}
+
+/* form */
+.container4 {
+    height: 70vh;
+}
+
+.contact-text {
+    margin-top: 8rem;
+}
+
+#message {
+    height: 15rem;
+}
+
+input[type=submit] {
+    width: 35%;
+    font-size: 16pt;
+}
+
+input[type=text], textarea::placeholder {
+    font-size: 16pt;
+}
+
+.form-boxes {
+    gap: 1rem;
+}
+
+/* bottom */
+.banner-bg-bottom {
+    height: 30vh;
+}
+
+.container3 {
+    height: 30vh;
+}
+
+#logo-bottom {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+#bottom-links a {
+    font-size: 16pt;
+    padding: 1.5rem;
+}
+
+.icons {
+    padding: 2rem;
+    width: 70%;
+}
+
+.fab {
+    font-size: 30pt;
+    padding: 14px;
+}
+
+}
+
+
+/* Small-desktop */
+@media (min-width: 1024px) {
+
+.navbar {
+    padding: 1.5rem;
+}
+
+.fas {
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 45pt;
+    margin-top: 4rem;
+}
+
+#intro-p {
+    font-size: 18pt;
+    line-height: 2.5rem;
+    width: 70vw;
+}
+
+.download-button {
+    padding: 15px 25px;
+    font-size: 18pt;
+}
+
+.watch-button {
+    padding: 15px 25px;
+    font-size: 18pt;
+}
+
+#play {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    margin-bottom: 3rem;
+}
+
+#iphone-top1 {
+    height: 40rem;
+}
+
+#iphone-top2 {
+    height: 40rem;
+}
+
+/* ec logotype */
+.ec-logo {
+    margin-top: 8rem;
+}
+
+#ec-utbildning {
+    margin-right: 15rem;
+}
+
+/* about us */
+.container2 {
+    height: 130vh;
+    width: 90vw;
+}
+
+#circles {
+    height: 45rem;
+    margin-top: 2rem;
+}
+
+#about-us-iphone {
+    height: 40rem;
+    margin-top: 5rem;
+}
+
+.about-us-button {
+    padding: 15px 25px;
+}
+
+#button-text {
+    font-size: 18pt;
+}
+
+#google, #apple {
+    height: 7rem;
+    border-radius: 17px;
+}
+
+.google-apple {
+    gap: 2.5rem;
+}
+
+.about-us-content {
+    margin-top: 7rem;
+}
+
+#about-us-p {
+    font-size: 18t;
+    line-height: 2.5rem;
+}
+
+/* features */
+.container7 {
+    height: 130vh;
+    width: 90vw;
+}
+
+#image-dots {
+    left: 320px;
+}
+
+h3 {
+    font-size: 25pt;
+}
+
+#about-us-p {
+    font-size: 18pt;
+}
+
+.features-p {
+    font-size: 18pt;
+}
+
+#features-image-back {
+    height: 35rem;
+}
+
+#features-iphone1 {
+    left: 15.5rem;
+    margin-top: 2rem;
+    height: 32rem;
+}
+
+#features-iphone2 {
+    height: 35rem;
+    margin-left: 2.5rem;
+}
+
+/* application */
+.container6 {
+    height: 65vh;
+    width: 90vw;
+}
+
+.centered-p {
+    font-size: 18pt;
+}
+
+/* Carousel */
+.swiper-container {
+    height: 30rem;
+}
+
+.swiper-slide img {
+    height: 21rem;
+}
+
+/* statistics */
+.container5 {
+    height: 35vh;
+    width: 90vw;
+}
+
+.nr-p {
+    font-size: 18pt;
+}
+
+/* download content */
+.banner-background {
+    height: 95vh;
+}
+
+.container8 {
+    height: 95vh;
+    width: 90vw;
+}
+
+#download-h {
+    font-size: 35pt;
+}
+
+#download-p {
+    font-size: 18pt;
+}
+
+#iphone-left {
+    height: 35rem;
+}
+
+#iphone-front {
+    height: 40rem;
+}
+
+#iphone-right {
+    height: 35rem;
+}
+
+/* form */
+.container4 {
+    height: 65vh;
+    width: 90vw;
+}
+
+#message {
+    height: 25rem;
+}
+
+input[type=submit] {
+    width: 30%;
+    font-size: 18pt;
+}
+
+input[type=text], textarea::placeholder {
+    font-size: 18pt;
+}
+
+/* bottom */
+.banner-bg-bottom {
+    height: 27vh;
+}
+
+.container3 {
+    height: 27vh;
+}
+
+#bottom-links a {
+    font-size: 18pt;
+    padding: 2.5rem;
+}
+
+.icons {
+    width: 50%;
+}
+
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+.container {
+    max-width: 70vw;
+}
+        
+.top-background {
+    height: 90vh;
+}
+        
+.navbar {
+    display: flex;
+}
+        
+.top-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+        
+#mobile-menu {
+    display: none;
+}
+        
+#home-active {
+    color: #FFBB00 !important;
+    content: "";
+    display: block;
+    width: 40%;
+    border-bottom: 4px solid #FFBB00;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    height: 35vh;
+}
+        
+#intro-p {
+    width: 28vw;
+    font-size: 16pt;
+}
+        
+/* navbar links */
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16pt;
+    margin: 0 1.5rem;
+}
+        
+.navbar a:hover {
+    color: #FFBB00;
+}
+        
+/* navbar button */
+.navbar-button {
+    background-image: linear-gradient(to right, #FFBB00 0%, #fccf55  51%, #FFBB00  100%)
+}
+
+.navbar-button {
+    padding: 10px 30px;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 8px;
+    border: none;
+}
+        
+.navbar-button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 8px #eee;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    height: 50vw;
+}
+        
+h1 {
+    font-size: 50pt;
+    margin: 0;
+    width: 40vw;
+}
+ 
+.download-button {
+    padding: 15px 30px;
+    transition: 0.5s;
+}
+ 
+.download-button:hover {
+    box-shadow: 0 0 9px #ffffff;
+    text-shadow: 0 0 9px #ffffff;
+}
+
+#play {
+    border: 4px solid;
+    padding: 0.4rem;
+}
+ 
+.watch-button {
+    transition: 0.5s;
+}
+ 
+.watch-button:hover {
+    text-shadow: 0 0 9px #ffffff;
+}
+ 
+.buttons {
+    margin: 0;
+}
+ 
+.iphone-top-images {
+    width: 90rem;
+    height: 50rem;
+}
+ 
+#iphone-top1 {
+    height: 40rem;
+    top: 0;
+    left: 20rem;
+}
+ 
+#iphone-top2 {
+    height: 40rem;
+}
+    
+/* ec logotype */
+.ec-logo {
+    margin-top: 8rem;
+}
+
+#ec-utbildning {
+    margin-right: 15rem;
+}
+
+#ec-utbildning, #ec-utbildning2 {
+    animation: slideshow 10s linear infinite;
+}
+
+/* about us */
+.container2 {
+    height: 95vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#circles {
+    height: 40rem;
+    margin-top: 3rem;
+}
+
+.about-us-content {
+    width: 40vw;
+}
+
+#about-us-iphone {
+    height: 40rem;
+    margin-top: 3rem;
+}
+
+.about-us-button {
+    padding: 10px 20px;
+}
+
+#button-text {
+    font-size: 16pt;
+}
+
+#about-us-p {
+    font-size: 16pt;
+}
+
+/* features */
+.container7 {
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.features-c {
+    position: relative;
+    background-color: #fcfcfc;
+    display: flex;
+}
+
+#image-dots {
+    width: 15rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+#about-us-p {
+    font-size: 16pt;
+}
+
+.features-p {
+    font-size: 14pt;
+}
+
+.features-content {
+    width: 47vw;
+    padding: 8vw;
+}
+
+#features-image-back {
+    height: 35rem;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.features-icons > p {
+    margin: 0;
+}
+
+.grid-container {
+    width: 45vw;
+}
+
+#features-iphone1 {
+    margin-top: 2rem;
+    height: 36.5rem;
+    margin-left: 48vw;
+}
+
+#features-iphone2 {
+    height: 40rem;
+    margin-left: 2.5rem;
+}
+
+/* application */
+.container6 {
+    height: 110vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centered-p {
+    margin: auto;
+    font-size: 16pt;
+    width: 40vw;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+
+/* Carousel */
+.swiper-container {
+    height: 50rem;
+}
+
+.swiper-slide img {
+    height: 38rem;
+}
+
+/* statistics */
+.container5 {
+    height: 40vh;
+    width: 60vw;
+    position: relative;
+}
+
+#map {
+    width: 50vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.application-text2 {
+    margin-top: 5rem;
+}
+
+.nr {
+    width: 10vw;
+}
+
+.nr-p {
+    font-size: 16pt;
+}
+
+/* download content */
+.banner-background {
+    height: 54vh;
+}
+
+.container8 {
+    height: 54vh;
+    width: 80vw;
+    text-align: left;
+}
+
+#download-h {
+    font-size: 35pt;
+}
+
+.download-content-part1 {
+    width: 40vw;
+}
+
+#download-p {
+    font-size: 16pt;
+}
+
+.download-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.download-iphones {
+    width: 30vw;
+    height: 54vh;
+    margin-left: auto;
+}
+
+.download-text {
+    position: relative;
+}
+
+#iphone-left {
+    height: 25rem;
+    left: 0;
+}
+
+#iphone-front {
+    height: 30rem;
+}
+
+#iphone-right {
+    height: 25rem;
+    left: 18vw;
+}
+
+/* form */
+.container4 {
+    height: 70vh;
+    width: 60vw;
+}
+
+#message {
+    height: 20rem;
+}
+
+input[type=submit] {
+    width: 20%;
+    font-size: 16pt;
+}
+
+input[type=text], textarea::placeholder {
+    font-size: 16pt;
+}
+
+/* bottom */
+.banner-bg-bottom {
+    height: 30vh;
+}
+
+.container3 {
+    height: 30vh;
+}
+
+#bottom-links a {
+    font-size: 16pt;
+    cursor: pointer;
+}
+
+#bottom-links a:hover {
+    color: #ffbb00;
+    text-decoration: none;
+}
+
+.fab {
+    cursor: pointer;
+}
+
+.fab:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.icons {
+    width: 30%;
+}
+
+
+    
+}
